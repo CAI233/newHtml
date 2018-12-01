@@ -1,0 +1,10 @@
+import goods from './goods.vue';
+import index from './index.vue';
+import details from './details.vue';
+import car from './car.vue';
+import waitOrder from './waitOrder.vue';
+goods.index = index;
+goods.details = details;
+goods.car = car;
+goods.waitOrder = waitOrder;
+export default goods;

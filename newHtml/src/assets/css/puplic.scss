@@ -1,0 +1,315 @@
+
+@charset "utf-8";
+
+html{
+
+  color: #000;
+  background: #fff;
+  overflow-y: scroll;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+ 
+}
+html * {
+  outline: none;
+  -webkit-text-size-adjust: none;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+html,
+body {
+  font-family: sans-serif;
+  height: 100%;
+  width:100%;
+  overflow:unset !important;
+}
+
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,textarea,p,blockquote,
+th,td,hr,button,article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section {
+  margin: 0;
+  padding: 0;
+}
+
+input,
+select,
+textarea {
+  font-size: 100%;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+fieldset,
+img {
+  border: 0;
+}
+
+abbr,
+acronym {
+  border: 0;
+  font-variant: normal;
+}
+
+del {
+  text-decoration: line-through;
+}
+address,
+caption,
+cite,
+code,
+dfn,
+em,
+th,
+i,
+var {
+  font-style: normal;
+  font-weight: 500;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+caption,
+th {
+  text-align: left;
+}
+
+h1,h2,h3,h4,h5,h6 {
+  font-size: 100%;
+  font-weight: 500;
+}
+q:before,
+q:after {
+  content: '';
+}
+
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+sup {
+  top: -0.5em;
+}
+sub {
+  bottom: -0.25em;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+ins,
+a,
+a:active,
+a:visited,
+a:link{
+  text-decoration: none;
+}
+.clearfix{
+  &:after{
+    display: table;
+    clear: both;
+    content: "";
+    visibility: hidden;;
+    height: 0;
+  }
+}
+body{
+  height:100%;
+  font-family: "Microsoft YaHei";
+}
+
+.header_nav .ivu-input{
+  background:#4DB6AC;
+  outline:0;
+  border:none;
+  box-shadow:none;
+}
+.header_nav .ivu-input:focus,.header_nav .ivu-input:hove{
+  outline:0;
+  border:none;
+  box-shadow:none;
+}
+.header_nav .ivu-col .iconfont{
+  color:#fff;
+  font-size:0.5333rem;
+}
+.header_nav .ivu-input::-webkit-input-placeholder{
+color:#fff;
+}
+
+.header_nav .ivu-input:-moz-placeholder{
+color:#fff;
+}
+
+.header_nav .ivu-input::-moz-placeholder{
+color:#fff;
+}
+.header_nav .ivu-input:-ms-input-placeholder{
+color:#fff;
+}
+
+//button
+button,button:hover,button:focus{
+  box-shadow:none !important;
+  outline:0 !important;
+}
+.ivu-btn>span{
+  vertical-align:baseline !important;
+}
+// input
+input,input:hover,input:focus{
+  outline:0 !important;
+  box-shadow:none !important;
+}
+.ivu-input,.ivu-input:hover,.ivu-input:focus{
+  outline:0 !important;
+  box-shadow:none !important;
+}
+//inputNumber
+.ivu-input-number,.ivu-input-number:hover{
+  border-color:#dcdee2;
+  border-radius:0;
+  border-left: none;
+  border-right: none;
+  box-shadow:none;
+  outline:0;
+}
+// 弹出层
+.ivu-modal-wrap{
+  display: flex;
+  width: 100%;
+  height: 100%;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.ivu-modal{
+  top: 0;
+  min-width:6.6667rem !important;
+  flex:none !important;
+}
+.ivu-modal-confirm-footer{
+  display:none;
+}
+.ivu-modal-close{
+  top:0
+}
+.ivu-modal-header{
+  border-bottom:none;
+  padding:0.1333rem 0.4267rem;
+}
+.ivu-modal-body{
+  font-size:0.3733rem;
+  color:#666666;
+}
+.ivu-modal-footer{
+  border-top:none;
+}
+.logistical-list .ivu-modal{
+  max-width:9rem !important;
+}
+.courier-list .ivu-modal-content,.logistical-list .ivu-modal-content{
+  padding:16px;
+}
+.logistical-list .ivu-modal-content{
+  overflow-y: scroll;
+  max-height: 14rem;
+}
+.courier-list .ivu-modal-content .ivu-modal-header,.logistical-list .ivu-modal-content .ivu-modal-header{
+  padding:0;
+}
+
+.courier-list .ivu-modal-content .ivu-modal-close{
+  top:0.3rem;
+  right:0.3rem;
+}
+.courier-list .ivu-modal-content .ivu-modal-header-inner{
+  font-size:0.3733rem;
+  line-height:0.64rem;
+  height:0.64rem;
+  color:#DF8D15;
+  font-weight:normal;
+}
+.courier-list .ivu-modal-body,.logistical-list .ivu-modal-body{
+  padding:0;
+  margin-top:0.2667rem;
+  margin-bottom:0.2667rem;
+}
+.courier-list .ivu-modal-footer,.logistical-list .ivu-modal-footer{
+  padding:0;
+}
+.content-list p{
+  display:flex;
+  font-size:0.3733rem;
+}
+.content-list p>span{
+  height:0.8rem;
+  line-height:0.8rem;
+}
+.content-list p .ivu-input-wrapper{
+  flex:1;
+}
+.content-list p input{
+  height:0.8rem;
+  padding-left:0.1333rem;
+  padding-right:0.1333rem;
+}
+.content-list p input,.content-list p input:hover,.content-list p input:focus{
+  border:none;
+}
+.contentsee-list:not(:last-of-type){
+  margin-bottom:0.4rem;
+}
+.contentsee-list p input,.contentsee-list p input:hover,.contentsee-list p input:focus{
+  border-bottom:1px solid #dcdee2;
+  color:#009788;
+}
+.content-list p .ivu-dropdown{
+  line-height:0.8rem;
+  flex:1;
+}
+.content-list p .ivu-dropdown .ivu-dropdown-rel a{
+  display: inherit;
+  text-align: right;
+  padding-left:0.1333rem;
+  padding-right:0.1333rem;
+  color:#666;
+  font-size: 0.32rem;
+}
+.content-list p .ivu-dropdown .ivu-dropdown-rel a span{
+  float:left;
+}
+.content-list p .ivu-dropdown .ivu-select-dropdown{
+  left:auto !important;
+  right:0.4rem;
+  max-height:4rem;
+  overflow-y: scroll;
+}
+// 下拉框
+.ivu-dropdown-item-selected, .ivu-dropdown-item-selected:hover{
+  background:none!important;
+  color:#009788!important;
+}
+// cell层
+.ivu-cell:hover,.ivu-cell:focus{
+  background:#fff !important;
+}
+// 公用没有的样式
+.no{
+  position: fixed;
+  width: 100%;
+  height: calc(100% - 1.333rem);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  left: 0;
+  top: 0;
+}
